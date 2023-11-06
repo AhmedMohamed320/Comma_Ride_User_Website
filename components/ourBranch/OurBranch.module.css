@@ -1,0 +1,43 @@
+.section {
+    height: 8vh;
+}
+
+.section ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10rem, 25rem));
+    gap: 1rem;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 1rem;
+}
+
+.section ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-light-2);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow-1);
+}
+
+.section ul li:not(:first-of-type) {
+    background-color: var(--color-dark-4);
+    position: relative;
+}
+
+.section ul li:not(:first-of-type) p {
+    position: absolute;
+    top: 7px;
+    left: 1px;
+    transform: rotate(-45deg);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.section ul li img {
+    width: 40%;
+    max-width: 15rem;
+}
