@@ -2,7 +2,6 @@ import MainNav from "@/components/main_nav/MainNav";
 import "../globals.css";
 import localFont from "next/font/local";
 import Nav from "@/components/main_nav/navMobile/Nav";
-import Footer from "@/components/footer/Footer";
 import OurBranch from "@/components/ourBranch/OurBranch";
 
 const myFont = localFont({
@@ -27,7 +26,6 @@ export default function RootLayout({ children }) {
                 <div className="sm:hidden block">
                     <Nav />
                 </div>
-                <Footer />
             </body>
         </html>
     );
