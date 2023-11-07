@@ -53,11 +53,11 @@ const Request_deliveryman = () => {
                         <label htmlFor="n10"> ملاحظات </label>
                         <textarea
                             id="n10"
-                            placeholder="ادخل اي ملاحظه عايز توصلها لمندوبك او خدمه العملاء"
+                            placeholder="اكتب اي ملاحظه عايز توصلها لمندوبك او خدمه العملاء"
                         ></textarea>
                     </div>
                     <div>
-                        <label> جدوله الطلب لو عايز ! </label>
+                        <label> جدول الطلب لوقت محدد لو عايز ! </label>
                         <div className="flex gap-4 w-full">
                             <input type="date" className="w-full" />
                             <input type="time" className="w-full" />
