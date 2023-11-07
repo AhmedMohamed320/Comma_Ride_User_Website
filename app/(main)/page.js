@@ -11,6 +11,9 @@ export default function Home() {
                     <img src="/image/dots-2.png" alt="dots logo" />
                 </div>
                 <p>هنساعدك توصل اي حاجه من اي مكان ل اي مكان داخل الزقازيق</p>
+                <p className="text-2xl">
+                    طلبك بقا اسهل واسرع مع دوتس
+                </p>
             </div>
             <div className={classes.service}>
                 <div>
@@ -73,7 +76,7 @@ export default function Home() {
                         <span>كن جزء من فريق شركتنا</span> <br />
                         <span>سجل بياناتك وسوف يطلع فريقنا عليها</span>
                     </p>
-                    <Link href="">سجل بياناتك</Link>
+                    <Link href="/join_us">سجل بياناتك</Link>
                 </div>
                 <div>
                     <img src="/image/delivery.png" alt="delivery" />

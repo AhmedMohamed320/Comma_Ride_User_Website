@@ -1,0 +1,103 @@
+.ads img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid var(--color-dark-7);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.form .part {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-dark-3);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form .part>div,
+.form form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form .part>div input,
+.form form>div input,
+.form form>div textarea ,
+.form form>div select {
+    background-color: var(--color-light-2);
+    color: var(--color-dark-5);
+    border: 1px solid var(--color-dark-7);
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.form button{
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    background-color: var(--color-red-1);
+    border-radius: 0.5rem;
+    outline: none;
+    color: var(--color-light-2);
+}
+/* ------------------------- */
+.pop {
+    position: fixed;
+    background-color: #2e232380;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10002;
+    display: none;
+}
+
+.pop.show {
+    display: flex;
+}
+
+.pop > div {
+    background-color: var(--color-light-2);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-dark-3);
+    font-size: 1.8rem;
+    position: relative;
+    width: 90%;
+    max-width: 30rem;
+    text-align: center;
+}
+
+.pop > div .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+.pop > div button {
+    width: 100%;
+    background-color: var(--color-red-1);
+    padding: 0.5rem;
+    color: var(--color-light-2);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow-1);
+    font-size: 1.5rem;
+}

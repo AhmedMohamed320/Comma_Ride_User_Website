@@ -4,11 +4,11 @@
 
 .section ul {
     display: grid;
-    grid-template-columns: repeat(3, minmax(10rem, 25rem));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 100%;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .section ul li {

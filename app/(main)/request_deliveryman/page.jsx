@@ -1,4 +1,4 @@
-import Request_deliveryman from "@/components/request_deliveryman/Request_deliveryman";
+import Request_deliveryman from "@/components/form/Request_deliveryman";
 import React from "react";
 
 const page = () => {
