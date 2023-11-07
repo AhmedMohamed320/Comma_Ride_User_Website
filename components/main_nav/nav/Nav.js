@@ -38,7 +38,7 @@ const Nav = (props) => {
                             <Link href="/">الرئيسيه</Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="/request_deliveryman">
                                 <p>اطلب مندوب</p>
                             </Link>
                         </li>

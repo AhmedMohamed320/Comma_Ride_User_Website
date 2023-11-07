@@ -26,8 +26,8 @@ const Nav = (props) => {
                             <p>العروض</p>
                         </Link>
                     </li>
-                    <li>
-                        <Link href="/">
+                    <li className={pathname == "/request_deliveryman" ? classes.active : ""}>
+                        <Link href="/request_deliveryman">
                             <IoAddCircleOutline className="text-5xl" />
                             <p>اطلب مندوب</p>
                         </Link>
@@ -38,13 +38,13 @@ const Nav = (props) => {
                             <p>الرئيسيه</p>
                         </Link>
                     </li>
-                    <li>
+                    <li className={pathname == "" ? classes.active : ""}>
                         <Link href="/">
                             <MdOutlineBookmarkAdded className="text-5xl" />
                             <p>طلباتي</p>
                         </Link>
                     </li>
-                    <li>
+                    <li className={pathname == "" ? classes.active : ""}>
                         <Link href="/">
                             <MdOutlineAccountCircle className="text-5xl" />
                             <p>حسابي</p>

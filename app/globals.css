@@ -43,6 +43,10 @@ a {
   text-decoration: none;
 }
 
+label {
+  font-weight: 600;
+}
+
 .mainContainer {
   width: 98%;
   max-width: 100rem;

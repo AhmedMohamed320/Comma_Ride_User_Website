@@ -12,11 +12,6 @@ export default function Home() {
                 </div>
                 <p>هنساعدك توصل اي حاجه من اي مكان ل اي مكان داخل الزقازيق</p>
             </div>
-            <div className={`center font-semibold ${classes.getDelivery}`}>
-                <Link href="">
-                    <p>طلب مندوب</p>
-                </Link>
-            </div>
             <div className={classes.service}>
                 <div>
                     <div className={classes.img}>
