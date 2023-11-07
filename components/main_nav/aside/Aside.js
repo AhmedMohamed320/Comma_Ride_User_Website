@@ -11,6 +11,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { HiOutlineHome } from "react-icons/hi";
 import { IoAddCircleOutline } from "react-icons/io5";
+import { IoMdGift } from "react-icons/io";
 
 const Aside = (props) => {
     const pathname = usePathname();
@@ -53,6 +54,18 @@ const Aside = (props) => {
                         >
                             <IoAddCircleOutline />
                             <p>اطلب مندوب</p>
+                        </Link>
+                    </li>
+                    <li className={pathname == "/" ? classes.active : ""}>
+                        <span className={classes.border}></span>
+                        <Link
+                            href={{
+                                pathname: "/",
+                            }}
+                            onClick={props.onHideAside}
+                        >
+                            <IoMdGift />
+                            <p>العروض</p>
                         </Link>
                     </li>
                     <li className={pathname == "/" ? classes.active : ""}>

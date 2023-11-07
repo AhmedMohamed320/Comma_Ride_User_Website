@@ -38,7 +38,14 @@ const Nav = (props) => {
                             <Link href="/">الرئيسيه</Link>
                         </li>
                         <li>
-                            <Link href="/"><p>اطلب مندوب</p></Link>
+                            <Link href="/">
+                                <p>اطلب مندوب</p>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/">
+                                <p>العروض</p>
+                            </Link>
                         </li>
                         <li>
                             <Link href="/">طلباتي</Link>

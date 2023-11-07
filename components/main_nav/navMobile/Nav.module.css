@@ -9,11 +9,17 @@
     background-color: var(--color-light-1);
 }
 
-.list{
+.list {
     height: 100%;
 }
 
+.list ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .list>ul li>a {
+    height: 100%;
     font-size: 1.6rem;
     font-weight: 600;
     color: var(--color-dark-6);
@@ -27,6 +33,6 @@
     transition: 0.1s;
 }
 
-.list>ul li.active>a{
+.list>ul li.active>a {
     color: var(--color-red-1);
 }
