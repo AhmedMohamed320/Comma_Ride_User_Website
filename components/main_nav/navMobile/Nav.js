@@ -20,8 +20,8 @@ const Nav = (props) => {
         <section className={navClass}>
             <div className={classes.list}>
                 <ul className="w-full h-full">
-                    <li className={pathname == "" ? classes.active : ""}>
-                        <Link href="/">
+                    <li className={pathname == "/offers" ? classes.active : ""}>
+                        <Link href="/offers">
                             <IoMdGift className="text-5xl" />
                             <p>العروض</p>
                         </Link>
@@ -38,14 +38,14 @@ const Nav = (props) => {
                             <p>الرئيسيه</p>
                         </Link>
                     </li>
-                    <li className={pathname == "" ? classes.active : ""}>
-                        <Link href="/">
+                    <li className={pathname == "/myOrders" ? classes.active : ""}>
+                        <Link href="/myOrders">
                             <MdOutlineBookmarkAdded className="text-5xl" />
                             <p>طلباتي</p>
                         </Link>
                     </li>
-                    <li className={pathname == "" ? classes.active : ""}>
-                        <Link href="/">
+                    <li className={pathname == "/myAccount" ? classes.active : ""}>
+                        <Link href="/myAccount">
                             <MdOutlineAccountCircle className="text-5xl" />
                             <p>حسابي</p>
                         </Link>

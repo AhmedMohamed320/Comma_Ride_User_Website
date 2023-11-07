@@ -36,7 +36,17 @@ const Request_deliveryman = () => {
             </div>
             <section className="flex flex-col gap-4 py-4">
                 <div className={`center ${classes.ads}`}>
-                    <img src="/image/ads.avif" alt="" />
+                    <picture>
+                        <source
+                            media="(min-width: 40rem)"
+                            srcSet="/image/ads.avif"
+                            type="image/avif"
+                        />
+                        <img
+                            src="/image/ads-2.avif"
+                            alt="Description of the image"
+                        />
+                    </picture>
                 </div>
                 <div className={classes.form}>
                     <form action="">

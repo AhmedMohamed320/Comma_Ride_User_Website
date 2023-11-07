@@ -43,15 +43,15 @@ const Nav = (props) => {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">
+                            <Link href="/offers">
                                 <p>العروض</p>
                             </Link>
                         </li>
                         <li>
-                            <Link href="/">طلباتي</Link>
+                            <Link href="/myOrders">طلباتي</Link>
                         </li>
                         <li>
-                            <Link href="/">حسابي</Link>
+                            <Link href="/myAccount">حسابي</Link>
                         </li>
                     </ul>
                 </div>
