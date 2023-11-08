@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import classes from "./Form.module.css";
 import { CgClose } from "react-icons/cg";
+import { TbPhone } from "react-icons/tb";
+import Link from "next/link";
 const Request_deliveryman = () => {
     const [showAlert, setShowAlert] = useState(false);
     const alertClass = `${classes.pop}  ${showAlert ? `${classes.show}` : ""}`;
@@ -24,13 +26,7 @@ const Request_deliveryman = () => {
                         <p className="font-semibold mb-4 text-2xl">
                             التكلفه المتوقعه : <span>20 جنيه</span>
                         </p>
-                        <button
-                            onClick={() => {
-                                setShowAlert(false);
-                            }}
-                        >
-                            التوجه الى صفحه طلباتي
-                        </button>
+                        <Link href="/myOrders">التوجه الى صفحه طلباتي</Link>
                     </div>
                 </div>
             </div>
@@ -59,6 +55,19 @@ const Request_deliveryman = () => {
                                 خدمه العملاء لتحديد السعر النهائي ووقت التوصيل
                                 على ان يتم اعلامك في خلال دقيقه الى دقيقتين
                             </p>
+                            <p>
+                                * بنفكرك ان الحد الاقصى للوزن 10 كيلو و يشترط
+                                تناسب حجم الطلب مع يوكس الطيار
+                            </p>
+                            <div className="flex items-center justify-center gap-2 text-red-400">
+                                <a
+                                    href="tel:01026204006"
+                                    className="text-2xl underline"
+                                >
+                                    للاستفسار تواصل مع خدمه العملاء
+                                </a>
+                                <TbPhone />
+                            </div>
                         </div>
 
                         <div className={classes.part}>
@@ -114,6 +123,13 @@ const Request_deliveryman = () => {
                                     placeholder="ادخل رقم الشخص او المكان "
                                 />
                             </div>
+                        </div>
+                        <div>
+                            <label htmlFor="n10"> الطلب </label>
+                            <textarea
+                                id="n10"
+                                placeholder="ادخل الطلب"
+                            ></textarea>
                         </div>
                         <div>
                             <label htmlFor="n10"> ملاحظات </label>

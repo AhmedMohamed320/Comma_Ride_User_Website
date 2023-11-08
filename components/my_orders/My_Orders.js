@@ -82,7 +82,7 @@ const My_Orders = () => {
                                 </div>
 
                                 <div className={classes.data}>
-                                    <label htmlFor="n10"> بيانات الطلب </label>
+                                    <label htmlFor="n10">  الطلب </label>
                                     <textarea
                                         id="n10"
                                         placeholder="-----"
