@@ -1,0 +1,148 @@
+.part {
+    padding: 1rem;
+    border: 1px solid var(--color-dark-7);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.part>div {
+    padding: 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--color-dark-3);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--color-light-2);
+}
+
+.state {
+    background-color: var(--color-red-1);
+    padding: 0.2rem 1rem;
+    border-radius: 0.3rem;
+    color: var(--color-light-2);
+    font-size: 1.3rem;
+    font-weight: 500 !important;
+}
+
+.part>div p {
+    font-weight: 600;
+}
+
+.part>div span {
+    font-weight: 500;
+}
+
+/* ------------------ */
+
+.pop {
+    position: fixed;
+    background-color: #2e232380;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10002;
+    display: none;
+}
+
+.pop.show {
+    display: flex;
+}
+
+.pop>div {
+    background-color: var(--color-light-1);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-dark-3);
+    font-size: 1.8rem;
+    position: relative;
+    width: 90%;
+    max-width: 50rem;
+    text-align: center;
+}
+
+.pop>div .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+.pop>div button {
+    width: 100%;
+    background-color: var(--color-red-1);
+    padding: 0.5rem;
+    color: var(--color-light-2);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow-1);
+    font-size: 1.5rem;
+}
+
+/* ------------------ */
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form .part {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-dark-3);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form .part>div,
+.form form .data {
+    display: grid;
+    grid-template-columns: 7rem 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 !important;
+    border: none;
+}   
+
+
+
+.form .part>div input,
+.form form>div input,
+.form form>div textarea,
+.form form>div select {
+    background-color: var(--color-light-2);
+    color: var(--color-dark-5);
+    border: 1px solid var(--color-dark-7);
+    padding: 0.4rem;
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.form button {
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    background-color: var(--color-red-1);
+    border-radius: 0.5rem;
+    outline: none;
+    color: var(--color-light-2);
+}
+
+.confirm{
+    background-color: var(--color-red-1);
+    color: var(--color-light-2);
+}

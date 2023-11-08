@@ -75,12 +75,17 @@ label {
 /* ----------------------- */
 .mainPage {
   min-height: 82vh;
-  margin-bottom: 12vh;
 }
 
 
 @media (max-width: 65rem) {
   html {
     font-size: 50%;
+  }
+}
+
+@media (max-width:40rem) {
+  .mainPage {
+    margin-bottom: 12vh;
   }
 }

@@ -76,7 +76,7 @@ const Aside = (props) => {
                     </li>
                     <li
                         className={
-                            pathname == "/myOrders" ? classes.active : ""
+                            pathname.includes("/myOrders") ? classes.active : ""
                         }
                     >
                         <span className={classes.border}></span>
