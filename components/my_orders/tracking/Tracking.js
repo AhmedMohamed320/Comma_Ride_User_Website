@@ -53,7 +53,12 @@ const Tracking = () => {
                     </div>
 
                     <a href="tel:01280626320" className={classes.deliveryMan}>
-                        <p>الطيار محمد احمد</p>
+                        <div className="flex items-center gap-4">
+                            <div className={classes.image}>
+                                <img src="/image/person.jfif" alt="" />
+                            </div>
+                            <p>الطيار محمد احمد</p>
+                        </div>
                         <span>
                             <TbPhone />
                         </span>
