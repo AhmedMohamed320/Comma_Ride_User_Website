@@ -176,11 +176,16 @@ const My_Orders = () => {
                             <p>السعر النهائي : 25 جنيه</p>
                             <p className={classes.state}>ننتظر تاكيدك</p>
                         </div>
-                        <div>
+                        <div className="flex gap-4">
                             <button
                                 className={`text-2xl text-center p-4 rounded-lg w-full ${classes.confirm}`}
                             >
                                 اوافق على التسعيره يمكنك التحرك
+                            </button>
+                            <button
+                                className={`text-2xl text-center p-4 rounded-lg w-full ${classes.confirm}`}
+                            >
+                                الغاء الطلب
                             </button>
                         </div>
                     </div>
