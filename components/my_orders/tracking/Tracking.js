@@ -1,15 +1,17 @@
 import React from "react";
 import classes from "./Tracking.module.css";
-import Map from "@/components/map/Map";
 import { TbPhone } from "react-icons/tb";
-import Link from "next/link";
+import dynamic from "next/dynamic";
 const Tracking = () => {
+    const DynamicMap = dynamic(() => import("../../map/Map"), {
+        ssr: false,
+    });
     return (
         <section className={classes.section}>
             <p className="text-3xl font-semibold">طلب رقم 544545</p>
             <div>
                 <div className={classes.map}>
-                    <Map />
+                    <DynamicMap />
                 </div>
                 <div className={classes.details}>
                     <div>
