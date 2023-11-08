@@ -42,8 +42,6 @@
 .tracking {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 95%;
-    margin: auto;
 }
 
 .tracking>div {

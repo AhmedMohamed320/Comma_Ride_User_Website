@@ -180,7 +180,7 @@ const My_Orders = () => {
                             <button
                                 className={`text-2xl text-center p-4 rounded-lg w-full ${classes.confirm}`}
                             >
-                                اوافق على التسعيره يمكنك التحرك
+                                تاكيد
                             </button>
                             <button
                                 className={`text-2xl text-center p-4 rounded-lg w-full ${classes.confirm}`}
@@ -198,8 +198,9 @@ const My_Orders = () => {
                             <p>
                                 الطلب : <span>ورق من مكتبه عمر ب اسم محمد</span>
                             </p>
-                            <Link href="/myOrders/delivery_tracking"
-                                className={`text-2xl text-center p-4 rounded-lg ${classes.confirm}`}
+                            <Link
+                                href="/myOrders/delivery_tracking"
+                                className={classes.state}
                             >
                                 تتبع الطيار
                             </Link>
