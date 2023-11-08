@@ -52,12 +52,12 @@ const Tracking = () => {
                         />
                     </div>
 
-                    <div className={classes.deliveryMan}>
+                    <a href="tel:01280626320" className={classes.deliveryMan}>
                         <p>الطيار محمد احمد</p>
-                        <a href="tel:01280626320">
+                        <span>
                             <TbPhone />
-                        </a>
-                    </div>
+                        </span>
+                    </a>
                 </div>
             </div>
         </section>
