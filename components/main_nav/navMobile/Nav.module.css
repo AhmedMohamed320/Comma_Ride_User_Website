@@ -7,6 +7,7 @@
     z-index: 100;
     border-top: 1px solid var(--color-dark-7);
     background-color: var(--color-light-1);
+    box-shadow: 0 0 10rem rgba(5, 5, 5, 0.349);
 }
 
 .list {

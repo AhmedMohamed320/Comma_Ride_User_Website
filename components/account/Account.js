@@ -2,6 +2,9 @@ import React from "react";
 import classes from "./Account.module.css";
 import { LuWallet2 } from "react-icons/lu";
 import { MdDoneAll } from "react-icons/md";
+import { BsWhatsapp } from "react-icons/bs";
+import { BiLogoFacebook, BiPhone } from "react-icons/bi";
+
 const Account = () => {
     return (
         <>
@@ -11,9 +14,7 @@ const Account = () => {
                         <LuWallet2 />
                     </div>
                     <div className="flex gap-4 items-center">
-                        <p className="text-3xl font-semibold">
-                            اهلا احمد محمد
-                        </p>
+                        <p className="text-3xl font-semibold">اهلا احمد محمد</p>
                         <p className="text-2xl">#4524</p>
                     </div>
                     <p>
@@ -135,6 +136,26 @@ const Account = () => {
                                     تكلفه التوصيل : <span>25 جنيه</span>
                                 </p>
                             </div>
+                        </li>
+                    </ul>
+                </div>
+                <div className={classes.contactUs}>
+                    <p className="text-2xl text-center pb-4">تواصل معانا</p>
+                    <ul className="flex items-center gap-8 justify-center">
+                        <li>
+                            <a href="https://wa.me/+201026204006" target="_blank">
+                                <BsWhatsapp />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/dotsdelivery.eg?locale=ar_AR" target="_blank">
+                                <BiLogoFacebook />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:01026204006">
+                                <BiPhone />
+                            </a>
                         </li>
                     </ul>
                 </div>
