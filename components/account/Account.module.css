@@ -76,6 +76,10 @@
     padding: 1rem;
     color: var(--color-light-2);
     border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
 }
 
 .contactUs ul li a {
@@ -88,4 +92,14 @@
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
+}
+
+/* ---------- */
+
+.btn{
+    background-color: var(--color-red-1);
+    color: var(--color-light-2);
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
 }

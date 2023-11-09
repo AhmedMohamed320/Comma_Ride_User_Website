@@ -4,6 +4,7 @@ import { LuWallet2 } from "react-icons/lu";
 import { MdDoneAll } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { BiLogoFacebook, BiPhone } from "react-icons/bi";
+import Link from "next/link";
 
 const Account = () => {
     return (
@@ -139,16 +140,22 @@ const Account = () => {
                         </li>
                     </ul>
                 </div>
+
                 <div className={classes.contactUs}>
-                    <p className="text-2xl text-center pb-4">تواصل معانا</p>
                     <ul className="flex items-center gap-8 justify-center">
                         <li>
-                            <a href="https://wa.me/+201026204006" target="_blank">
+                            <a
+                                href="https://wa.me/+201026204006"
+                                target="_blank"
+                            >
                                 <BsWhatsapp />
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/dotsdelivery.eg?locale=ar_AR" target="_blank">
+                            <a
+                                href="https://www.facebook.com/dotsdelivery.eg?locale=ar_AR"
+                                target="_blank"
+                            >
                                 <BiLogoFacebook />
                             </a>
                         </li>
@@ -158,6 +165,7 @@ const Account = () => {
                             </a>
                         </li>
                     </ul>
+                    <Link href="/sign_in" className={classes.btn}>تسجيل الخروج</Link>
                 </div>
             </section>
         </>

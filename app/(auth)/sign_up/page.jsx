@@ -73,10 +73,21 @@ const Login = () => {
                             />
                         </Link>
                         <div>
-                            <p className="text-2xl">تسجيل دخول</p>
+                            <p className="text-2xl">
+                                تسجيل حساب جديد
+                            </p>
                         </div>
                     </div>
                     <div>
+                    <label htmlFor="username">الاسم </label>
+                        <input
+                            type="text"
+                            name="username"
+                            id="username"
+                            placeholder="ادخل اسمك "
+                            onChange={handleChangeForm}
+                            autoComplete="off"
+                        />
                         <label htmlFor="username">الرقم </label>
                         <input
                             type="text"
@@ -96,15 +107,12 @@ const Login = () => {
                             onChange={handleChangeForm}
                         />
                     </div>
-
+                    
                     <div className="flex flex-col gap-4 text-center">
-                        <button>تسجيل الدخول</button>
-                        <Link
-                            href="/sign_up"
-                            className="underline text-red-400 text-2xl"
-                        >
-                            ليس لديك حساب - تسجيل
-                        </Link>
+                        <button>تسجيل </button>
+                        <Link href="sign_in" className="underline text-red-400 text-2xl">
+                        لدى حساب بالفعل - تسجيل دخول
+                    </Link>
                     </div>
                 </form>
             </div>
