@@ -34,5 +34,22 @@
 }
 
 .list>ul li.active>a {
+    position: relative;
     color: var(--color-red-1);
+    overflow: hidden;
+}
+
+.list>ul li.active>a::after{
+    content: "";
+    position: absolute;
+    top: 2px;
+    width: 50%;
+    height: 4px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--color-red-1);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 0 3rem var(--color-red-1);
+
 }

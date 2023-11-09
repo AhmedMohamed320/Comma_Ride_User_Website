@@ -57,7 +57,7 @@ const Request_deliveryman = () => {
                             </p>
                             <p>
                                 * بنفكرك ان الحد الاقصى للوزن 10 كيلو و يشترط
-                                تناسب حجم الطلب مع يوكس الطيار
+                                تناسب حجم الطلب مع بوكس الطيار
                             </p>
                             <div className="flex items-center justify-center gap-2 text-red-400">
                                 <a
