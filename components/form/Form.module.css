@@ -29,9 +29,13 @@
     gap: 0.5rem;
 }
 
+.form .part>div {
+    position: relative;
+}
+
 .form .part>div input,
 .form form>div input,
-.form form>div textarea ,
+.form form>div textarea,
 .form form>div select {
     background-color: var(--color-light-2);
     color: var(--color-dark-5);
@@ -41,7 +45,7 @@
     border-radius: 0.5rem;
 }
 
-.form button{
+.form button {
     padding: 1rem;
     width: 100%;
     font-size: 1.5rem;
@@ -52,6 +56,7 @@
     outline: none;
     color: var(--color-light-2);
 }
+
 /* ------------------------- */
 .pop {
     position: fixed;
@@ -71,7 +76,7 @@
     display: flex;
 }
 
-.pop > div {
+.pop>div {
     background-color: var(--color-light-2);
     padding: 2rem;
     border-radius: 0.5rem;
@@ -83,7 +88,7 @@
     text-align: center;
 }
 
-.pop > div .close {
+.pop>div .close {
     position: absolute;
     top: 0;
     left: 0;
@@ -92,7 +97,7 @@
     cursor: pointer;
 }
 
-.pop > div a {
+.pop>div a {
     display: inline-block;
     width: 100%;
     background-color: var(--color-red-1);
@@ -102,3 +107,5 @@
     box-shadow: var(--box-shadow-1);
     font-size: 1.5rem;
 }
+
+/* ------------ */

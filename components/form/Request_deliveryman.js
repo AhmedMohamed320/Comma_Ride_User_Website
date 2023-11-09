@@ -4,8 +4,10 @@ import classes from "./Form.module.css";
 import { CgClose } from "react-icons/cg";
 import { TbPhone } from "react-icons/tb";
 import Link from "next/link";
+import InputComponent from "./InputComponent";
 const Request_deliveryman = () => {
     const [showAlert, setShowAlert] = useState(false);
+
     const alertClass = `${classes.pop}  ${showAlert ? `${classes.show}` : ""}`;
     return (
         <>
@@ -80,22 +82,8 @@ const Request_deliveryman = () => {
                                     <option value="">الزهور</option>
                                 </select>
                             </div>
-                            <div>
-                                <label htmlFor="n4">العنوان</label>
-                                <input
-                                    type="text"
-                                    id="n4"
-                                    placeholder="العنوان الي مندوبك هيستلم منه  "
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="n2">رقم الهاتف</label>
-                                <input
-                                    type="number"
-                                    id="n2"
-                                    placeholder="ادخل رقم الشخص او المكان "
-                                />
-                            </div>
+                            <InputComponent type="ads" />
+                            <InputComponent type="num" />
                         </div>
                         <div className={classes.part}>
                             <p>بيانات الي المندوب هيسلم لي (الى)</p>
@@ -107,22 +95,8 @@ const Request_deliveryman = () => {
                                     <option value="">الزهور</option>
                                 </select>
                             </div>
-                            <div>
-                                <label htmlFor="n4">العنوان</label>
-                                <input
-                                    type="text"
-                                    id="n4"
-                                    placeholder=" العنوان الي مندوبك هيسلم لي   "
-                                />
-                            </div>
-                            <div>
-                                <label htmlFor="n2">رقم الهاتف</label>
-                                <input
-                                    type="number"
-                                    id="n2"
-                                    placeholder="ادخل رقم الشخص او المكان "
-                                />
-                            </div>
+                            <InputComponent type="ads" />
+                            <InputComponent type="num" />
                         </div>
                         <div>
                             <label htmlFor="n10"> الطلب </label>
