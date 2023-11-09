@@ -8,7 +8,6 @@
     border-radius: 1.5rem;
     box-shadow: var(--box-shadow-1);
     color: var(--color-light-2);
-    font-size: 2rem;
     position: relative;
 }
 
@@ -34,4 +33,40 @@
 .wallet>p:nth-of-type(2){
     font-size: 1.5rem;
     color: var(--color-dark-7);
+}
+
+.lastOrder{
+    border-top: 1px solid var(--color-dark-3);
+    border-bottom: 1px solid var(--color-dark-3);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.lastOrder ul li{
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    align-items: center;
+    gap: 1rem;
+    /* background-color: var(--color-dark-3); */
+    border: 1px solid var(--color-dark-7);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.icon2{
+    background-color: rgb(169, 241, 146);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem ;
+}
+
+.lastOrder ul li:nth-child(even) .icon2{
+    background-color: rgb(241, 243, 137);
+
 }
